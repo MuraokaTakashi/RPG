@@ -32,7 +32,6 @@ public class Collision {
 		public int id = -1;							// オブジェクト識別
 		public int type = -1;						// コリジョンタイプ(主体・その他)
 		public boolean[] collType = new boolean[2];	// 自分に対してコリジョン判定を行うタイプ
-		public ArrayList<HitData> hitList = null;	// 接触したリスト
 		public DrawObject object = null;			// オブジェクト
 	}
 
@@ -125,7 +124,6 @@ public class Collision {
 		cd.collType[LIST_A] = collTypeA;
 		cd.collType[LIST_B] = collTypeB;
 		cd.object = obj;
-		cd.hitList = new ArrayList<HitData>();
 
 		return cd;
 	}
